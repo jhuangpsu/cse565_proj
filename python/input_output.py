@@ -78,9 +78,6 @@ def output_trees_to_new_file(graphs, file_name):
 
 # Outputs the graph to a text file in the format given by instructors
 def output_graph_to_existing_file(graph, output_file):
-
-	# Get the number of leaves of the tree
-	leaves = graph.num_leaves
 	
 	# Build a list of distinct edges
 	edges = get_edges(graph)
