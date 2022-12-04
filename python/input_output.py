@@ -65,12 +65,14 @@ def output_graphs_to_new_file(graphs, file_name):
 		output_graph_to_existing_file(graph, output_file)
 	output_file.close()
 
-def output_graphs_to_new_file_demo(graphs, file_name):
+def output_trees_to_new_file(graphs, file_name):
 	output_file = open(file_name, 'w')
 
-	output_file.write(str(1) + '\n')
+	number_of_graphs = len(graphs)
+	output_file.write(str(number_of_graphs) + '\n')
 
-	output_graph_to_existing_file(graphs, output_file)
+	for graph in graphs:
+		output_tree_to_existing_file(graph, output_file)
 	output_file.close()
 
 
@@ -82,11 +84,14 @@ def output_graph_to_existing_file(graph, output_file):
 	
 	# Build a list of distinct edges
 	edges = get_edges(graph)
-
+	nodes = get_nodes(graph)
+	#leaves = get_leaves(graph)
+	
 	# Output number of edges in this graph to file
 	number_of_edges = len(edges)
-	#output_file.write(str(number_of_edges) + '\n')
-	output_file.write(str(leaves) + ' '+ str(number_of_edges) + '\n')
+	number_of_nodes = len(nodes)
+	#number_of_leaves = len(leaves)
+	output_file.write(str(number_of_nodes) + ' ' + str(number_of_edges) + '\n')
 
 	# Output all the edges in this graph to file
 	for edge in edges:
@@ -94,18 +99,19 @@ def output_graph_to_existing_file(graph, output_file):
 		v = edge.ends[1]
 		output_file.write(str(u) + ' ' + str(v) + '\n')
 
-def output_graph_to_existing_file_demo(graph, output_file):
+def output_tree_to_existing_file(graph, output_file):
 
 	# Build a list of distinct edges
 	edges = get_edges(graph)
-	nodes = get_nodes(graph)
+	leaves = get_leaves(graph)
 
 	# Output number of edges in this graph to file
 	number_of_edges = len(edges)
-	number_of_nodes = len(nodes)
-	output_file.write(str(number_of_edges) + ' ' + str(number_of_nodes) + '\n')
+	number_of_leaves = len(leaves)
+	output_file.write(str(number_of_leaves) + ' ' + str(number_of_edges) + '\n')
 
 	# Output all the edges in this graph to file
+	edges.sort(key=lambda elem: elem.ends[0])
 	for edge in edges:
 		u = edge.ends[0]
 		v = edge.ends[1]
