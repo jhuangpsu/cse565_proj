@@ -69,7 +69,7 @@ def output_trees_to_new_file(graphs, file_name):
 	output_file = open(file_name, 'w')
 
 	number_of_graphs = len(graphs)
-	output_file.write(str(number_of_graphs) + '\n')
+	#output_file.write(str(number_of_graphs) + '\n')
 
 	for graph in graphs:
 		output_tree_to_existing_file(graph, output_file)
