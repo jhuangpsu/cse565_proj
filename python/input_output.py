@@ -34,7 +34,12 @@ def input_graphs_from_file(file_name):
 	# Read lines in nested structure
 	for _ in range(number_of_graphs):
 		edges = []
-		number_of_edges = int(lines.popleft())
+		#number_of_edges = int(lines.popleft())
+		node_edge = lines.popleft().split()
+		if len(node_edge) == 2 :
+			number_of_edges = int(node_edge[1])
+		else:
+			number_of_edges = int(node_edge[0])
 
 		for _ in range(number_of_edges):
 			edge_ends = lines.popleft().split()
@@ -72,12 +77,16 @@ def output_graphs_to_new_file_demo(graphs, file_name):
 # Outputs the graph to a text file in the format given by instructors
 def output_graph_to_existing_file(graph, output_file):
 
+	# Get the number of leaves of the tree
+	leaves = graph.num_leaves
+	
 	# Build a list of distinct edges
 	edges = get_edges(graph)
 
 	# Output number of edges in this graph to file
 	number_of_edges = len(edges)
-	output_file.write(str(number_of_edges) + '\n')
+	#output_file.write(str(number_of_edges) + '\n')
+	output_file.write(str(leaves) + ' '+ str(number_of_edges) + '\n')
 
 	# Output all the edges in this graph to file
 	for edge in edges:
