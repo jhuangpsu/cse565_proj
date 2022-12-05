@@ -25,6 +25,7 @@ OUR_TREES = 'hard.out'
 ALL_GRAPHS_INPUT = 'hard1.in'
 #ALL_TREES_OUTPUT = 'hard.all.v3.out'
 ALL_TREES_OUTPUT = 'hard1.out'
+MERGED_OUTPUT = 'after_merge.out'
 #TEMPORARY_TREES_OUTPUT = 'hard.all.v3.out_temporary'
 TEMPORARY_TREES_OUTPUT = 'hard1.out_temporary'
 

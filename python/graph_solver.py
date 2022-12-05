@@ -16,7 +16,7 @@ def do_everything():
 	graphs = input_graphs_from_file(ALL_GRAPHS_INPUT)
 	trees = find_leafy_spanning_trees(graphs)
 	output_graphs_to_new_file(trees, TEMPORARY_TREES_OUTPUT)
-	merge_solutions(ALL_TREES_OUTPUT, TEMPORARY_TREES_OUTPUT, ALL_TREES_OUTPUT)
+	merge_solutions(ALL_TREES_OUTPUT, TEMPORARY_TREES_OUTPUT, MERGED_OUTPUT)
 
 
 # Takes a list of graphs and returns the leafiest spanning tree we can find
