@@ -70,6 +70,17 @@ def find_leafy_spanning_tree(graph, graph_number=0, our_graphs=[], our_trees=[],
 
 	# Test for small input size
 	if len(get_edges(graph)) < SMALL_NUMBER_OF_EDGES:
+		print ("Less than 25 edges.")
+		# Try all algorithms including brute force and record the best one
+		for algorithm_name, algorithm in ALGORITHMS_B:
+			tree = algorithm(graph)
+			tree.search()
+
+			if tree.num_leaves > best_leaf_count:
+				best_tree = tree
+				best_leaf_count = tree.num_leaves
+				best_algorithm = algorithm_name
+		'''
 		for i in range(len(manually_solved_graphs)):
 			if are_equivalent_graphs(graph, manually_solved_graphs[i]):
 				solved_tree = manually_solved_trees[i]
@@ -78,16 +89,17 @@ def find_leafy_spanning_tree(graph, graph_number=0, our_graphs=[], our_trees=[],
 					best_tree = solved_tree
 					best_leaf_count = solved_tree.num_leaves
 					best_algorithm = 'manually solved'
+		'''
+	else:
+		# Try all algorithms excluding brute force and record the best one
+		for algorithm_name, algorithm in ALGORITHMS:
+			tree = algorithm(graph)
+			tree.search()
 
-	# Try all algorithms and record the best one
-	for algorithm_name, algorithm in ALGORITHMS:
-		tree = algorithm(graph)
-		tree.search()
-
-		if tree.num_leaves > best_leaf_count:
-			best_tree = tree
-			best_leaf_count = tree.num_leaves
-			best_algorithm = algorithm_name
+			if tree.num_leaves > best_leaf_count:
+				best_tree = tree
+				best_leaf_count = tree.num_leaves
+				best_algorithm = algorithm_name
 
 	# Log the best solution
 	print('Best solution for instance ' + str(graph_number) + ':\tLeaves: ' + str(best_leaf_count) + '\t/\t' + str(len(get_nodes(graph))) + '\tAlgorithm: ' + best_algorithm)

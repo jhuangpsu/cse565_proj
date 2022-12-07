@@ -301,6 +301,40 @@ def expansion_rule_tree(graph):
 	return leafy_spanning_tree
 
 
+def brute_force(graph):
+	edges = get_edges(graph)
+	edge_num = len(edges)
+	nodes = get_nodes(graph)
+	node_num = len(nodes)
+	subgraph_num = 2 ** edge_num
+
+	best_tree = None
+	most_leaves = 0
+
+	for k in range(subgraph_num):
+		edges_new = set()
+		remain  = k
+		for i in range (edge_num):
+			#exist = (subgraph_num // (10**i)) % 10
+			exist = remain % 2
+			remain = remain // 2
+			if exist == 1:
+				edges_new.add(edges[i])
+			if remain == 0:
+				break
+
+		graph_new = make_graph(edges_new)
+		# check if new graph is a spanning tree 
+		if (len(get_nodes(graph_new)) == node_num) and (is_tree(graph_new)):
+			leaf_number = len(get_leaves(graph_new))
+			if leaf_number > most_leaves:
+				most_leaves = leaf_number
+				best_tree = graph_new
+
+	#print(most_leaves)
+	return best_tree
+
+
 
 # Maintain a list of all (algorithm name, algorithm function) so that they can be
 # systematically called from graph_solver.py
@@ -308,6 +342,13 @@ ALGORITHMS = [
 	('joined forest tree', joined_forest_tree),
 	('expansion rule tree', expansion_rule_tree),
 	('randomized tree', randomized_tree)
+]
+
+ALGORITHMS_B = [
+	('joined forest tree', joined_forest_tree),
+	('expansion rule tree', expansion_rule_tree),
+	('randomized tree', randomized_tree),
+	('brute force', brute_force)
 ]
 
 
