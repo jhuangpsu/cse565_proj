@@ -15,7 +15,7 @@ This file extracts leafy spanning trees from graphs, for part 2 of the MLST proj
 def do_everything():
 	graphs = input_graphs_from_file(ALL_GRAPHS_INPUT)
 	trees = find_leafy_spanning_trees(graphs)
-	output_graphs_to_new_file(trees, TEMPORARY_TREES_OUTPUT)
+	output_trees_to_new_file(trees, TEMPORARY_TREES_OUTPUT)
 	merge_solutions(ALL_TREES_OUTPUT, TEMPORARY_TREES_OUTPUT, MERGED_OUTPUT)
 
 
