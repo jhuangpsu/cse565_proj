@@ -27,7 +27,7 @@ ALL_GRAPHS_INPUT = 'all-hard.in'
 ALL_TREES_OUTPUT = 'all-hard.out'
 MERGED_OUTPUT = 'after_merge.out'
 #TEMPORARY_TREES_OUTPUT = 'hard.all.v3.out_temporary'
-TEMPORARY_TREES_OUTPUT = 'all-hard.out_temporary'
+TEMPORARY_TREES_OUTPUT = 'all-hard.out'
 
 MANUALLY_SOLVED_GRAPHS = 'manually_solved.in'
 MANUALLY_SOLVED_TREES = 'manually_solved.out'

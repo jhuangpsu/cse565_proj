@@ -9,6 +9,7 @@ Best solution for instance 7:   Leaves: 64      /       88      Algorithm: joine
 Best solution for instance 8:   Leaves: 63      /       82      Algorithm: joined forest tree
 Best solution for instance 9:   Leaves: 67      /       94      Algorithm: joined forest tree
 Best solution for instance 10:  Leaves: 64      /       80      Algorithm: joined forest tree
+Less than 25 edges.
 Best solution for instance 11:  Leaves: 11      /       20      Algorithm: expansion rule tree
 Best solution for instance 12:  Leaves: 94      /       100     Algorithm: expansion rule tree
 Best solution for instance 13:  Leaves: 92      /       100     Algorithm: expansion rule tree
@@ -44,6 +45,7 @@ Best solution for instance 42:  Leaves: 90      /       100     Algorithm: joine
 Best solution for instance 43:  Leaves: 90      /       100     Algorithm: joined forest tree
 Best solution for instance 44:  Leaves: 91      /       100     Algorithm: joined forest tree
 Best solution for instance 45:  Leaves: 9       /       13      Algorithm: joined forest tree
+Less than 25 edges.
 Best solution for instance 46:  Leaves: 11      /       20      Algorithm: expansion rule tree
 Best solution for instance 47:  Leaves: 2       /       2       Algorithm: detected line
 Best solution for instance 48:  Leaves: 99      /       100     Algorithm: detected tree
@@ -62,6 +64,7 @@ Best solution for instance 60:  Leaves: 72      /       100     Algorithm: joine
 Best solution for instance 61:  Leaves: 71      /       100     Algorithm: joined forest tree
 Best solution for instance 62:  Leaves: 84      /       100     Algorithm: our own solution
 Best solution for instance 63:  Leaves: 82      /       100     Algorithm: our own solution
+Less than 25 edges.
 Best solution for instance 64:  Leaves: 11      /       20      Algorithm: expansion rule tree
 Best solution for instance 65:  Leaves: 14      /       20      Algorithm: joined forest tree
 Best solution for instance 66:  Leaves: 30      /       50      Algorithm: joined forest tree
@@ -76,15 +79,16 @@ Best solution for instance 74:  Leaves: 67      /       100     Algorithm: joine
 Best solution for instance 75:  Leaves: 74      /       100     Algorithm: joined forest tree
 Best solution for instance 76:  Leaves: 71      /       100     Algorithm: joined forest tree
 Best solution for instance 77:  Leaves: 81      /       100     Algorithm: joined forest tree
-Best solution for instance 78:  Leaves: 51      /       97      Algorithm: randomized tree
-Best solution for instance 79:  Leaves: 47      /       97      Algorithm: randomized tree
+Best solution for instance 78:  Leaves: 47      /       97      Algorithm: randomized tree
+Best solution for instance 79:  Leaves: 45      /       97      Algorithm: randomized tree
 Best solution for instance 80:  Leaves: 49      /       97      Algorithm: randomized tree
-Best solution for instance 81:  Leaves: 39      /       99      Algorithm: randomized tree
+Best solution for instance 81:  Leaves: 38      /       99      Algorithm: randomized tree
 Best solution for instance 82:  Leaves: 92      /       100     Algorithm: joined forest tree
 Best solution for instance 83:  Leaves: 98      /       100     Algorithm: joined forest tree
 Best solution for instance 84:  Leaves: 60      /       100     Algorithm: joined forest tree
 Best solution for instance 85:  Leaves: 50      /       91      Algorithm: joined forest tree
-Best solution for instance 86:  Leaves: 7       /       11      Algorithm: randomized tree
+Less than 25 edges.
+Best solution for instance 86:  Leaves: 8       /       11      Algorithm: brute force
 Best solution for instance 87:  Leaves: 39      /       40      Algorithm: joined forest tree
 Best solution for instance 88:  Leaves: 81      /       100     Algorithm: joined forest tree
 Best solution for instance 89:  Leaves: 76      /       100     Algorithm: joined forest tree
@@ -111,3 +115,13 @@ Best solution for instance 109: Leaves: 53      /       100     Algorithm: joine
 Best solution for instance 110: Leaves: 48      /       100     Algorithm: joined forest tree
 Best solution for instance 111: Leaves: 56      /       100     Algorithm: joined forest tree
 Best solution for instance 112: Leaves: 61      /       100     Algorithm: joined forest tree
+Best solution for instance 113: Leaves: 58      /       100     Algorithm: joined forest tree
+Best solution for instance 114: Leaves: 58      /       100     Algorithm: joined forest tree
+Best solution for instance 115: Leaves: 58      /       100     Algorithm: joined forest tree
+Best solution for instance 116: Leaves: 59      /       100     Algorithm: joined forest tree
+Best solution for instance 117: Leaves: 58      /       100     Algorithm: joined forest tree
+Best solution for instance 118: Leaves: 61      /       100     Algorithm: joined forest tree
+Best solution for instance 119: Leaves: 52      /       100     Algorithm: joined forest tree
+Best solution for instance 120: Leaves: 55      /       100     Algorithm: joined forest tree
+Best solution for instance 121: Leaves: 56      /       100     Algorithm: joined forest tree
+Best solution for instance 122: Leaves: 60      /       100     Algorithm: joined forest tree
